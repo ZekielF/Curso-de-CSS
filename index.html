@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Curso de CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <article id="position">By ZekielF</article>
+    <header>
+        <h1>Curso de CSS</h1>
+    </header>
+        <h2 class="h2-title-pricipal">Selectors</h2>
+            <h3 id="inicio-pag">Universal</h3>
+                <p>Selecciona toda la pagina debemos uar el *</p>
+            <h3>Tipo</h3>
+                <p>Selecciona todo tipo de elemento por ejemplo h3(universal,tipo,id,atributo,Descendiente y Peseudo-clases)</p>
+            <h3>Clases</h3>
+                <p class="elec">Seleciona los elementos con Clases por ejemplo .(nombre)</p>
+            <h3>ID</h3>
+                <p id="elecid">Selecciona elementos unicos que no se pueden repetir por ejemplo #(nombre) o #(nombre2)</p>
+            <h3>Atributo</h3>
+                <p elec="elecid">Selecciona los atributos por ejemplo [nombre="nombre"]</p>
+            <h3>Descendiente</h3>
+                <p><b>Selecciona <span>elemento dentro de otro elemento</span> por ejemplo p b color orange y p b span color black</b></p>
+            <h3>Pseudo-clases</h3>
+                <P class="hov">Selecciona con el puntero del mouse por ejemplo usando selector clases .hov:hover</P>
+        <h2 class="h2-title">Fonts</h2>
+            <h3>Tamaño de letras</h3>
+                <p class="px">font-size: 40px;</p>
+                <p class="cpx">Color de letras mas tamaño</p>
+            <h3>Tipos o fuentes de letras</h3>
+                <p>Cambiar tipos o fuentes de letras la forma mas facil es buscar en google <a class="linkred" href="https://fonts.google.com" target="_blank">fonts.google.com</a>
+                una vez seleccionado la fuente para aplicar primero debemos ir a haed en html el link copiado y segundo ir a pegar 
+                el siguiente codigo en css font-family: ;
+                </p>
+                <p>Recordar que el link puesto anteriormente con selector descendiente(rojo) y Pseudo-clases(azul).</p>
+                <p class="let">Ejemplo de tipo de fuentes de letras</p>
+                <p class="let2">Ejemplo 2 de tipo de fuentes de letras</p>
+            <h3>Font weight</h3>
+                <p class="grosor">Es el grosor de las letras por ejemplo las letras negritas y hacerlas mas negras.</p>
+        <h2 class="h2-title">Border</h2>
+            <h3>Tamaño de imagen</h3>
+                <p>tanto en html como en css se le aplica el width</p>
+                    <img src="yotsuba.png" alt="">
+            <h3>Bordes de imagen</h3>
+                <p>se aplica usando el borde-width, border-style y border-color.</p>
+                    <img src="miko.jpg" class="miko" alt="">
+            <h3>Formas de Bordes</h3>
+                <p>Esquina redondeada usando el border-radius 400px; o 50%;.</p>
+                    <img src="itsuki.png" class="itsuki" alt="">
+        <h2 class="h2-title">Background color</h2>
+            <h3>Listas con color de fondo</h3>
+                        <div class="list-cel">
+                            <ul>
+                                <li>Samsung Galaxy A23</li>
+                                <li>Poco F4 GT</li>
+                                <li>Realme GT 2 Pro</li>
+                                <li>Moto Edge 30 Pro</li>
+                                <li>Moto G200</li>
+                            </ul>
+                        </div>
+            <h3>Fondo de la pagina</h3>
+                <p>a continuacion usamos una imagen de fondo con el siguiente comando background-image: url("imagen.png");<br>
+                    En caso de que no se vea le agregamos el alto Height.
+                </p>
+        <h2 class="h2-title">Padding</h2>
+            <p>Es la propiedad que nos permite generar espacio interno entre el borde y la caja,<b>Valor individual</b>.</p>
+                <ul>
+                    <li>Padding-top: Padding superior</li>
+                    <li>Padding-right: Padding Derecho</li>
+                    <li>Padding-bottom: Padding Inferior</li>
+                    <li>Padding-left: Padding Izquierdo</li>
+                </ul>
+            <p>Admite hasta 4 valores que van en el orden de las abujas del reloj.</p>
+                <ol>
+                    <li>Valor-> Padding: (top/right/bottom/left); <b>Padding: 50px;</b></li>
+                    <li>Valor-> Padding: (top/bottom) (left/right); <b>Padding: 25px 50px;</b></li>
+                    <li>Valor-> Padding: (top) (left/right) (bottom); <b>Padding: 50px 100px 50px;</b></li>
+                    <li>Valor-> Padding: (top) (right) (bottom) (left); <b>Padding: 25px 50px 25px 50px;</b></li>
+                </ol>
+            <p>Ejemplo en la imagen de nino nakano</p>
+                <div>
+                    <img src="nino.png" class="nino" alt="">
+                </div>
+        <h2 class="h2-title">Margin</h2>
+            <p>Es basicamente el margen de una hoja exito o rivadavia.</p>
+                <div>
+                    <img src="ichika.png" class="ichika" alt="">
+                </div>
+        <h2 class="h2-title">Link</h2>
+            <p>el texto cuando tocamos un link el cual su estilo es color azul con subrayado por defecto, en este ejemplo 
+                usaremos a <a href="https://youtube.com/" target="_blank" class="lyt">Youtube</a> como link. <br>
+                Cuando alguien visita y toca el link cambia automaticamente de color a gris por ejemplo <a href="https://www.youtube.com.ar" target="_blank">Youtube</a>
+            </p>
+        <h2 class="h2-title">Unidades de longitud absoluta</h2>
+            <p>Ajusta el tamaño de los elementos de la pagina web tanto en pc como dispositivos moviles. <br>
+                los mas usados son em, rem, vw, vh, vmin y vmax.     
+            </p>
+                <div id="contenedor-principal">
+                    <div class="box px">200px de ancho</div>
+                    <div class="box vw">20vw de ancho</div>
+                    <div class="box em">15em de ancho</div>
+                </div>
+            <p>
+                Por defecto el navegador hace valer 1 em igual a 16px o 16 px igual a 1em pero podemos modificarlo si el contenedor principal Cambia
+                primero los px, ejemplo 20px y despues 5em es igual a 100px. <br>
+                Usar rem para el tamaño de letras o font size siempre 1rem sera 16px. <br>
+                Usar em para modificar el por defecto de rem y soluciona algunos problemas del rem respetando el padding.
+            </p>
+        <h2 class="h2-title">Prioridad en los estilos de linea</h2>
+            <p id="sic" style="color: brown" class="cis">Style vs ID vs Class:<br>
+               El style="color: brown" tiene mas prioridad que el id y se coloca en html<br>
+               pero en css si le agregamos el <b>!important</b> ala clase pasa a tener mas prioridad que el Style<br>
+               se puede agregar el important a cualquier selector.<br>
+               Ejemplo: .cis color: yellowgreen !important;
+            </p>
+        <h2 class="h2-title">Codes Hexadecimales colors</h2>
+            <p>Los codigos Hexadecimales tienen 6 digitos comenzando desde el #000000 0-9 A-F son colores personalizados.<br>
+                Para hacerlo mas facil podemos ingresar al navegador y buscar <b>color picker</b> y copiar el codigo Hexadecimal 
+            </p>
+                <div class="hexa color">
+                    <img src="logozf.jpg" class="logozf" alt="">
+                </div>
+                <div class="hexa color2">
+                    <img src="logozfc.jpg" class="logozf" alt="">
+                </div>
+        <h2 class="h2-title">Cursor</h2>
+            <h3>Seleccion cursor</h3>
+                    <div>
+                        <div class="caja-sel2">
+                            EZEQUIEL 
+                        </div>
+                    </div>
+            <p class="sel-cursor"> a ZekielF</p>
+        <h2 class="h2-title">Box shadow</h2>
+            <p>es la sombra o sombreado de la caja.</p>
+                    <h4>BOX</h4><h4>TEXT</h4><h4 class="sha">SHADOW</h4><h4 class="sha">SHADOW</h4>
+        <h2 class="h2-title">Lists</h2>
+            <p>Los estilos de lista que vamos a aplicar alo que viene por defecto.</p>
+                    <ul class="list-style">
+                        <li>Uno</li>
+                        <li>Dos</li>
+                        <li>Tres</li>
+                    </ul>
+        <h2 class="h2-title">Boards</h2>
+            <p>Los estilos de tablas que vamos a aplicar alo que viene por defecto.</p>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                    <tr>
+                        <td>Ezequiel</td>
+                        <td>Flores</td>
+                    </tr>
+                    <tr>
+                        <td>Ariana</td>
+                        <td>Castillo</td>
+                    </tr>
+                    <tr>
+                        <td>Eula</td>
+                        <td>Cobayashi</td>
+                    </tr>
+                </table>
+        <h2 class="h2-title">Position</h2>
+            <p>Modificamos posiciones de elementos en este caso el del texto.<br>
+                Ejemplo la barra de navegacion o el menu de alguna apps
+            </p>
+                <div class="container-position">
+                    <div class="position-box-1">Box 1</div>
+                    <div class="position-box-2">Box 2</div>
+                    <div class="position-box-3">Box 3</div>
+                    <div class="position-box-4">Box 4</div>
+                    <div class="position-box-5">Box 5</div>
+                </div>
+        <h2 class="h2-title">Tarea</h2>
+            <P>Selecciona el producto al comprar.</P>
+                <div class="cont-art">
+                    <section class="container">
+                        <article class="post">
+                            <h2>Samsung Galaxy S22 Ultra</h2>
+                                <p>Caracteristicas y especificaciones</p>
+                                    <img src="s22u.png" alt="">
+                                <p>Texto del articulo</p>
+                        </article>
+                        <article class="post">
+                            <h2>Samsung Galaxy S22+</h2>
+                                <p>Caracteristicas y especificaciones</p>
+                                    <img src="s22plus.png" alt="">
+                                <p>texto del articulo</p>
+                            </article>
+                        <article class="post">
+                            <h2>Samsung Galaxy S22</h2>
+                                <p>Caracteristicas y especificaciones</p>
+                                    <img src="s22.png" alt="">
+                                <p>texto del articulo</p>
+                            </article>
+                </div>
+        <h2 class="h2-title">Overflow</h2>
+            <p>Es la propiedad que controla lo que debe hacer la caja cuando su contenido se desborda del contenedor.<br>
+                Es un shorthand que engloba overflow-x y overflow-y <br>
+                Tiene cuatro valores:
+            </p>
+                <ol>
+                    <li>Visible: Es el valor por defecto</li>
+                    <li>Hidden: El contenido que se desborde no se vera. Si aplicamos esta propiedad en un solo eje, el otro se pondra automaticamente en el valor scroll</li>
+                    <li>Scroll: Apareceran barras de scroll en el eje asignado (x,y o ambos)</li>
+                    <li>Auto: Apareceran barras de scroll en el caso que hagan falta.</li>
+                </ol>
+                    <div class="over-flow">
+                        <p class="text-over-flow">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ea reprehenderit asperiores dignissimos cupiditate deleniti deserunt obcaecati, 
+                            rerum dolores. Laudantium totam architecto sapiente quas, nesciunt quae consectetur dolor illo nisi?
+                            Quam nemo quae corrupti sed dolores repellendus quibusdam est aperiam dolorum, 
+                            optio libero, asperiores beatae minus laudantium laboriosam aliquid ea esse hic perferendis? Ipsum est commodi impedit ex ipsa rerum?
+                            Odit at explicabo expedita nostrum, quia possimus, ex iure sint architecto dolore voluptatibus fuga tempora consectetur labore quos 
+                            dolorum! Nobis fugit, iusto quasi temporibus et omnis nisi nihil hic dolores?
+                            Explicabo praesentium quidem, voluptatem sint et aliquid quibusdam, dolorem corporis ipsa atque, error tempore? Voluptatem 
+                            expedita eius saepe repellat? Debitis consectetur aspernatur quas harum autem nisi consequatur alias ab obcaecati!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nobis repellendus ab recusandae molestiae laboriosam dolorum, 
+                            nemo non est inventore doloribus rerum aliquid voluptates illum sequi cum delectus debitis accusantium.
+                        </p>
+                    </div>
+        <h2 class="h2-title">Display</h2>
+            <p>La propiedad display nos sirve para cambiar el contexto de los elementos dentro del navegador.<br>
+                Admite varios valores: 
+            </p>
+                <ul>
+                    <li>None: Hace que el elemento no se muestre, pero sigue cargandose.</li>
+                    <li>Block: Hace que el elemento sea de bloque y ocupa todo el espacio necesario</li>
+                    <li>Inline: Hace que el elemento sea de linea y NO ocupa el total de su espacio en bloque</li>
+                    <li>Inline-block: Hace que el elemento pero admite medidas y margenes verticales</li>
+                </ul>
+                    <div>
+                        <a href="" class="display-link">Youtube</a><a href="" class="display-link">Tiktok</a>
+                    </div>
+                    <div>
+                        <a href="" class="display-link2">Instagram</a><a href="" class="display-link2">Twitter</a>
+                    </div>
+                        <div>
+                            <a href="" class="display-link3">Facebook</a><a href="" class="display-link3">Binance</a>
+                        </div>
+        <h2 class="h2-title">Outline</h2>
+            <p>Es la propiedad que nos permite dibujar un borde adentro o fuera de la caja.<br>
+                Es un shorthand que engloba:
+            </p>
+                <ul>
+                    <li>Outline-width: controla el ancho</li>
+                    <li>Outline-style: controla el estilo</li>
+                    <li>Outline-color: controla el color</li>
+                </ul>
+            <p>
+                Tiene las mismas propiedades y sintaxis que border, pero con algunas diferencias. 
+            </p>
+                <ul>
+                    <li>No ocupa estilo, ya que no forma parte del box model</li>
+                    <li>No se puede redondear</li>
+                    <li>No se puede controlar los lados de forma independiente</li>
+                </ul>
+            <p>
+                Tambien cuenta con la propiedad del outline-offset, que nos permite aumentar o 
+                disminuir la distancia del outline en relacion ala caja ala que pertenece.
+            </p>
+                <div class="outline-border">
+                    <p>Border</p>
+                </div>
+                    <div class="outline-outline">
+                        <p>Outline</p>
+                    </div>
+        <h2 class="h2-title">Z index</h2>
+            <p>
+                Orden de apilamiento en mayor a menor de las cajas o elementos estilo posicion relative (Rangos de posiciones).
+            </p> 
+                <div class="z-index-1">Box 1</div>
+                <div class="z-index-2">Box 2</div>
+                <div class="z-index-3">Box 3</div>
+                <div class="z-index-4">Box 4</div>
+        <h2 class="h2-title">Transitions</h2>
+            <p>Haremos transuciones usando las Pseudo-clases</p>
+                <ul>
+                    <li>Transition-property: clip-path background width;</li>
+                    <li>Transition-duration: 2s;</li>
+                    <li>Transition-timing-function: ease, ease-in, ease-out, ease-in-out, linear;</li>
+                    <li>Transition-delay: 4s; (es el tiempo de espera en ejecutarse la animacion)</li>
+                </ul>
+                    <div>
+                        <div class="transition-1"></div>
+                        <div class="transition-2"></div>
+                    </div>    
+
+
+
+
+
+        <h2 class="h2-title">Orden de propiedades</h2>
+            <p>Ordenar las propiedades es importante, no existe ninguna norma ni 
+                especificacion sobre como hacerlo, pero en la mayoria de los expertos coinciden en los mismos puntos. 
+            </p>
+                <ol>
+                    <li>Text</li>
+                    <li>Visual (colores, bordes, background...)</li>
+                    <li>El resto</li>
+                </ol>
+        </section>
+            <footer>
+                <section>
+                    <a href="https://www.youtube.com/channel/UC58K0RdqKL8yI91HQPdxNug" target="_blank" class="foot">Canal de Youtube</a>
+                    <a href="#inicio-pag" class="foot">Ir al Inicio</a>
+                </section>
+                    <p>Copiright © 2022 ZekielF Todos los derechos reservados</p>
+            </footer>
+</body> 
+</html>

@@ -1,0 +1,532 @@
+header {
+    background-color: blueviolet;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+header h1 {
+    color: white;
+    font-size: 25px;
+}
+.h2-title-pricipal {
+    margin-top: 70px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    z-index: 99;
+}
+.h2-title {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    z-index: 99;
+}
+
+
+
+
+/* SELECTORS */
+h3 {
+    color: blue;
+}
+.elec {
+    color: red;
+}
+#elecid {
+    color: green;
+}
+[elec="elecid"] {
+    color: brown;
+}
+p b {
+    color: red;
+}
+p b span {
+    color: black;
+}
+.hov:hover {
+    color: aquamarine;
+}
+
+
+
+
+/* FONTS */
+.px {
+    font-size: 40px;
+}
+.cpx {
+    color: yellowgreen;
+    font-size: 23px;
+}
+.linkred {
+    color: red;
+}
+p a:hover {
+    color: blue;
+}
+.let {
+    font-family: 'Macondo', cursive;
+    font-size: 40px;
+}
+.let2 {
+    font-family: 'Smooch', cursive;
+    font-size: 40px;
+}
+.grosor {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+
+
+/* BORDER */
+img {
+    width: 400px;
+}
+.miko {
+    width: 400px;
+    border-width: 10px;
+    border-color: blueviolet;
+    border-style: dashed;
+}
+.itsuki {
+    border-radius: 50%;
+}
+
+
+
+
+/* BACKGROUND COLOR */
+.list-cel {
+    background-color: red;
+    display: block;
+}
+
+
+
+
+/* PADDING */
+.nino {
+    padding: 50px;
+    background-color: greenyellow;
+    border: 10px solid black;
+}
+
+
+
+
+/* MARGIN */
+.ichika {
+    margin: 50px;
+    border: 10px solid brown;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/* LINKS */
+.lyt {
+    color: blueviolet;
+    text-decoration: none;
+}
+a:link {
+    color: red; /* color de las letras */
+}
+/*a:visited {
+    color: gray; se marca en color gris los links ya visitados 
+}*/
+a:active {
+    color: aqua; /* el selector de active solo es si mantenemos apretado el link para ver si esta activo cambia al color que elegimos */
+}
+
+
+
+
+/*UNIDADES ABSOLUTAS*/
+#contenedor-principal {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box {
+    padding: 5px;
+    margin: 5px;
+}
+.px {
+    background-color: aqua;
+    width: 200px;
+    font-size: 20px;
+}
+.vw {
+    background-color: darkmagenta;
+    width: 20vw;
+}
+.em {
+    background-color: green;
+    width: 15em;
+}
+
+
+
+
+/* CODES HEXADECIMALES COLORS */
+.cis {
+    color: yellowgreen;
+}
+#sic {
+    color: blue;
+}
+.hexa {
+    background-color: #000;
+}
+.color2 {
+    background-color: #e8eb34;
+}
+.logozf {
+    width: 200px;
+}
+
+
+
+
+/* CURSOR */
+.caja-sel2 {
+    display: inline-block;
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+    margin: 50px 40px;
+    line-height: 3; /* tamaño de la seleccion */
+}
+.caja-sel2::selection { /* color de fondo y letras de la seleccion */
+    background-color: yellow;
+    color: blue;
+}
+.sel-cursor::before{
+    content: "Me suscribi"; /* no se puede seleccionar */
+}
+
+
+
+
+/* BOX SHADOW */
+h4 {
+    background-color: red;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    box-shadow: 30px 20px 10px 10px #000; /* no hay limites en crear mas sombra agregando la coma */
+    text-shadow: 5px 5px 10px white, 5px 5px 10px white, 5px 5px 10px white;
+}
+.sha {
+    background-color: blue;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    box-shadow: inset -30px -20px 10px 10px #000; /* inset hace que la sombra cambie hacia adentro de la caja*/
+    text-shadow: 5px 5px 10px white, 5px 5px 10px white, 5px 5px 10px white;
+    transform: rotate(-45deg); /*en las cajas azules les agregamos rotacion. */
+}
+
+
+
+
+
+
+
+
+
+/* LISTS */
+.list-style {
+    background-color: cyan;
+    list-style: circle; /* agregamos circulos en vez de puntos */
+    padding-left: 0; /* quitamos los puntos y pading por defecto */
+}
+
+
+
+
+/* BOARDS */
+table {
+    width: 100%; 
+    border-collapse: collapse; /* hacemos colapsar el espacio entre bordes */
+}
+th, td {
+    border: solid 1px black;
+    padding: 5px;
+}
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer; /* Selecciona con la mano el cursor */
+}
+
+
+
+
+/* POSITIONS */
+#position {
+    background-color: black;
+    position: fixed; /* elemento de navegacion anclado haciendo scroll */
+    right: 0;
+    bottom: 0;
+    color: white;
+    opacity: 0.3;
+}
+/* sticky lo que mas se usa en las paginas IMPORTANTE */
+.container-position {
+    position: relative; /*importante para que la caja contenedora simule ser el body y no se escapen las cajas (mantiene su espacio original en caso de posicionarse ensima de otro usando left y top)*/
+    background-color: silver;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+.position-box-1 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+}
+.position-box-2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    position: absolute; /*para posicionar la caja y pierda su espacio original de html, se posiciona ensima de otro*/
+    right: 0;
+    top: 0;
+}
+.position-box-3 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.position-box-4 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+}
+.position-box-5 {
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+
+
+/* TRANSICION */
+.cont-art {
+    background-color: silver;
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+section article h2, section article p {
+    margin: 1rem;
+}
+.post {
+    width: 250px;
+}
+
+
+
+/* OVERFLOW */
+.over-flow {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+    color: #000;
+    overflow: auto;
+}
+.text-over-flow {
+    margin-left: 5px;
+}
+
+
+
+
+
+/* DISPLAY */
+.display-link {
+    background-color: pink;
+    display: block; /*cada uno de los links ocupa su propio espacio o blocke y ya no estan juntos*/
+}
+.display-link2 {
+    background-color: blue;
+    color: white;
+    /* display: inline; ya viene por defecto en los link ya que aparecen juntos */
+}
+.display-link3 {
+    background-color: red;
+    color: #000;
+    display: inline-block; /*Permite cambiar el tamaño de los espacios en linea de los links ya que por defecto no se puede*/
+    width: 100px;
+}
+
+
+
+
+/* OUTLINE */
+.outline-border, .outline-outline {
+    background-color: #666;
+    width: 100px;
+    padding: 10px 20px;
+    margin: 50px 100px;
+}
+.outline-border {
+    border: 3px solid lightcoral;
+}
+.outline-outline {
+    outline: 5px solid lightgreen;
+    outline-offset: -13px;
+    border: 3px solid lightcoral;
+}
+
+
+
+
+/* Z INDEX */
+.z-index-1, .z-index-2, .z-index-3, .z-index-4 {
+    width: 100px;
+    height: 100px;
+}
+.z-index-1 {
+    background-color: salmon;
+    position: relative;
+    padding: 40px 30px;
+    top: 0;
+    left: 200px;
+    z-index: 4; /*por defecto viene z-index 0 pero al colocarle un numero mayor este se pone como una caja principal ensima de otra*/
+}
+.z-index-2 {
+    background-color: blue;
+    position: relative;
+    padding: 40px 30px;
+    top: -50px;
+    left: 150px;
+}
+.z-index-3 {
+    background-color: red;
+    position: relative;
+    padding: 40px 30px;
+    top: -100px;
+    left: 100px;
+    z-index: 3;
+}
+.z-index-4 {
+    background-color: green;
+    position: relative;
+    padding: 40px 30px;
+    top: -150px;
+    left: 50px;
+}
+
+
+
+
+/* TRANSITIONS */
+.transition-1 {
+    background-color: #f00;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50% at top left);
+    transition-property: clip-path;
+    transition-duration: 2s;
+}
+.transition-1:hover {
+    clip-path: circle(150% at top left);
+}
+.transition-2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+}
+.transition-2:hover {
+    width: 100%;
+    transition: background-color width 2s ease;
+}
+
+
+
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    padding: 3rem;
+    color: #fff;
+}
+footer section {
+    float: right;
+}
+.foot {
+    float: right;
+    padding-left: 5px;
+    transition: color 0.3s ease;
+    color: red;
+    text-decoration: none;
+}
+footer p {
+    margin: 0;
+}
+.foot:hover {
+    color: blue;  
+}
